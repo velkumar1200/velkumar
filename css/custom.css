@@ -1,0 +1,128 @@
+html,body
+{
+  height:100%;
+  margin:0;
+}
+.test{
+    width: 700px; 
+    height: 550px;
+    position: absolute;
+    background-color:#007bff!important;
+  }
+#profile{
+    background-color:white;
+    background: rgba(255, 255, 255, 0.74);
+}
+
+/* .mt-1
+{
+    margin-top: 250px !important;
+} */
+.profileImg
+{
+    box-shadow: 10px 13px 21px -11px rgba(0,0,0,1);
+}
+/* .main{
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 10px 13px 15px -13px rgba(0,0,0,1);
+    border-style: outset;
+} */
+#sticky-footer {
+    position: relative;
+    padding-top:20px;
+    padding-bottom:20px;
+    width:100%;
+    clear:both;
+    background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
+    bottom:0px;
+  }
+  /* nav{
+    background-color:white;
+    border-radius: 10px;
+    font-weight: bold;
+  } */
+
+  nav ul li a{
+    text-transform: uppercase;
+    padding-right: 10px;
+    cursor: pointer;
+    color:white;
+
+  }
+  nav ul li a:hover{
+      border-radius: 10px;
+      font-weight: bold;
+      color:white;
+  }
+  .active{   
+    padding: 0px 5px 0 5px;
+    background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
+    background-size: 200% auto;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+  }
+  #profile
+  {
+    background: url(../Images/test.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: 0 0, center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-size: 100% 100%;
+  }
+  #films
+  {
+    /* background-color:#000;
+    background: rgba(0, 0, 0, 0.6); */
+    background: url(../Images/flim.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: 0 0, center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-size: 100% 100%;
+  }
+  #instagram
+  {    
+    background: url(../Images/camera.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 0, center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-size: 100% 100%;
+  }
+  hr
+  {
+    border: 0.6px solid white;
+  }
+  #cfilms
+  {
+    z-index: 2;
+    position: relative;
+  }
+  img
+  {
+    border-radius: 10px;
+  }
+  #instaphoto:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Velkumar</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-animate.js"></script>
+  <script src="script/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstr/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="bootstr/js/bootstrap.min.js"></script>
+  <link href="css/custom.css" rel="stylesheet" />
+  <style>
+    body {
+      background: url(Images/brick.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar my-3 mx-3 navbar-expand-lg navbar-expand-sm ml-auto">
+      <ul class="navbar-nav" id="navtab">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#body" id="myself">My Self</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#films" id="Films">Films</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#instagram" id="gallery">Photos</a>
+        </li>
+        <li>
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script>
+    // function myFunction() {
+    //   $("#content").load("profile.html")
+    // }
+    // $(document).ready( function() {
+    //    $("#").on("click", function() {
+    //     $("#content").load("gallery.html");
+    //     });
+    // });
+    // $(document).ready( function() {
+    //     $("#").on("click", function() {
+    //         $("#content").load("profile.html");
+    //     });
+    // });
+    var active = document.getElementById("navtab");
+    var item = active.getElementsByClassName("nav-item");
+    for (var i = 0; i < item.length; i++) {
+      item[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace("active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+  <div id="mainFrame" style="margin-top: 100px;">
+    <section id="profile">
+      <div class="container main p-5">
+        <div class="row ">
+          <div>
+            <img style="width: 340px;height:240px" src="Images/vel.jpg"
+              class="profileImg d-block mx-3 mt-1 img-fluid rounded" />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <h1 class="text-primary"> Velkumar</h1>
+            <p style="color: white;">Experienced with a demonstrated history of working in the information technology
+              and Product industry.
+              Skilled in Web Application Development, Desktop Application Development, Automation the Deployment and
+              other stuff to increases production</p>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </section>
+    <section id="films">
+      <div id="cfilms" class="text-center text-white">
+        <h1 style="padding-top:25px;">Films</h1>
+        <hr style="width:12%;">
+        <p>Want to see more? Subscribe to my Youtube Channel</p>
+        <a href="https://www.youtube.com/channel/UCIPA6mVmZ0OskUuwhtU0H6Q"><img id="subscribebtn" class="img-fluid"
+            style="width:10%; padding-bottom: 20px" src="Images/subscribe.png" /></a>
+        <br />
+        <div class="container">
+          <div class="row">
+            <h3>Latest:</h3>
+          </div>
+          <div class="row p-3">
+            <div class="col-lg-6 col-md-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/videoseries?list=PLkXgoYpqvcxeupJgZsyXLA-RcFMebwMG7"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen"></iframe>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Bg6EKenHxZA"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /> <br /> <br />
+    </section>
+    <section id="instagram">
+      <div id="cphoto" class="text-center" style="color: black">
+        <h1 style="padding-top:25px;color:black">Photos</h1>
+        <hr style="width:14%;border:1px solid black">
+        <p>Check out my Instagram for more pics! @VELKUMAR1200</p>
+        <a href="https://www.instagram.com/velkumar1200/">
+          <img id="subscribebtn" class="img-fluid" style="width:6%; padding-bottom: 20px"
+            src="Images/Instagram_icon.png" />
+        </a>
+        <br />
+        <div class="container">
+          <div class="row text-white">
+            <h3>Latest:</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <img id="instaphoto" class="img-fluid" style="padding-bottom: 20px" src="Images/instagram/ph1.jpg" />
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <img id="instaphoto" class="img-fluid" style="padding-bottom: 20px" src="Images/instagram/nature.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /> <br /> <br />
+    </section>
+  </div>
+  <br /> <br />
+  <footer id="sticky-footer">
+    <div class="container text-center text-white">
+      <h5>
+        <script>var d = new Date(); var n = d.getFullYear(); document.write(n + " ");</script>Copyright &copy; Velkumar
+      </h5>
+    </div>
+  </footer>
+</body>
+
+</html>
